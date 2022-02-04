@@ -1,0 +1,42 @@
+<div class="container">
+	<a href="/productos" class="btn btn-primary">Productos</a>
+
+	<div class="row justify-content-md-center">
+		<div class="col-5 align-self-center">
+			<form method="POST" action="/api/productos" enctype="text/html">
+				<div class="mb-3">
+					<label class="form-label">Nombre</label>
+					<input
+						name="title"
+						type="text"
+						placeholder="Nombre"
+						class="form-control"
+					/>
+
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Precio</label>
+					<input
+						name="price"
+						type="text"
+						placeholder="Precio"
+						class="form-control"
+					/>
+
+				</div>
+				<div class="mb-3">
+					<label class="form-label">URL de la imagen</label>
+					<input
+						name="image"
+						type="text"
+						placeholder="URL de la imagen"
+						class="form-control"
+					/>
+
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+head
+	meta(charset='utf-8')
+	title Title2
+	link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+
+	body
+	a(href="/").btn.btn-success Nuevo producto
+	if list.length == 0
+		h2 No hay productos disponibles
+	else 
+		table.table
+			thead
+				tr 
+					th(scope="col") #
+					th(scope="col") Nombre
+					th(scope="col") Precio
+					th(scope="col") Imagen
+			tbody
+				
+				each val in list 
+					tr
+						td= val.id
+						td= val.title
+						td= val.price
+						td
+							img(src=val.image heigh="50" width="50")

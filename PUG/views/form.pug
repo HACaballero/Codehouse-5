@@ -1,0 +1,26 @@
+head
+	meta(charset='utf-8')
+	title Title2
+	link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+
+	body
+		a(href="/productos").btn.btn-success Productos
+		p 
+		.modal-dialog
+			.modal-content
+				// Modal Body
+				.modal-body
+					form(role='form' method='POST' action='/api/productos' enctype="text/html")
+						div.form-group
+							label(for='title') Nombre:
+							input#title.form-control(type='text' placeholder='Nombre' name='title')
+						div.form-group
+							label(for='email') Email:
+							input#price.form-control(type='text' placeholder='Precio' name='price')
+						div.form-group
+							label(for='email') URL de la imagen:
+							input#price.form-control(type='text' placeholder='URL de la imagen' name='image')
+						button.btn.btn-primary(type="submit") Enviar
+
+		// footer
+		p.foot.text-xs-center
