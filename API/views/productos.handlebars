@@ -1,5 +1,9 @@
 <div class="container">
 	<a href="/" class="btn btn-primary">Nuevo producto</a>
+	{{#if empty}}
+	<h2>No hay productos disponibles</h2>
+	
+	{{else}}
 	<table class="table">
 		<thead>
 			<tr>
@@ -20,4 +24,5 @@
 			{{/each}}
 		</tbody>
 	</table>
+	{{/if}}
 </div>

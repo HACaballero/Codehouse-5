@@ -32,6 +32,7 @@ app.get("/productos", async (req, res) => {
 	res.render("productos", {
 		layout: "index",
 		list: productos,
+		empty: productos.length == 0 ? true : false,
 	});
 });
 
